@@ -1,0 +1,122 @@
+{
+  // #region Настройки редактора
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.smoothScrolling": true,
+  "editor.renderLineHighlight": "all",
+  "editor.detectIndentation": true,
+  "editor.suggestSelection": "recentlyUsed",
+
+  // Настройки переноса слов
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 100,
+
+  // Настройка линий
+  "editor.rulers": [
+    80,
+    {
+      "column": 100,
+      "color": "#f5c2e7"
+    },
+    {
+      "column": 120,
+      "color": "#f38ba8"
+    }
+  ],
+  "[git-commit]": { "editor.rulers": [50] },
+
+  // Прокрутка за пределы последней строки
+  "editor.scrollBeyondLastLine": true,
+
+  // Отображение символов
+  "editor.renderControlCharacters": false,
+
+  // Подсветка неоднозначных символов
+  "editor.unicodeHighlight.ambiguousCharacters": true,
+
+  // Настройки файлов
+  "files.autoSave": "afterDelay",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  // #endregion
+
+  // #region Внешний вид
+  "editor.bracketPairColorization.enabled": true,
+  "editor.glyphMargin": true,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.accessibilitySupport": "off",
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.activityBar.location": "default",
+  "workbench.editor.editorActionsLocation": "default",
+  "workbench.layoutControl.enabled": true,
+  "workbench.editor.empty.hint": "hidden",
+  "window.zoomLevel": 0,
+  "window.restoreWindows": "one",
+  "window.density.editorTabHeight": "compact",
+  "window.customTitleBarVisibility": "auto",
+  "breadcrumbs.enabled": true,
+  "window.menuBarVisibility": "toggle",
+
+  // Настройки курсора
+  "editor.cursorBlinking": "expand",
+  "editor.cursorStyle": "line-thin",
+  "editor.cursorSmoothCaretAnimation": "explicit",
+
+  // Шрифт
+  "editor.fontSize": 16,
+  "editor.lineHeight": 18,
+  "editor.fontWeight": "500",
+  "editor.fontFamily": "Ubuntu Mono, monospace",
+  "editor.fontLigatures": true,
+  "editor.inlayHints.fontFamily": "Ubuntu Mono",
+  "chat.editor.fontFamily": "Ubuntu Mono",
+  "editor.codeLensFontFamily": "Ubuntu Mono",
+  "debug.console.fontFamily": "Ubuntu Mono",
+
+  // Кастомизация подсветки синтаксиса
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": ["comment"],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+
+  // Настройки терминала
+  "terminal.integrated.fontFamily": "Ubuntu Mono",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.tabs.enabled": false,
+  "terminal.integrated.cursorStyle": "underline",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // #endregion
+
+  // #region Web
+  // Связанные редактирования тегов
+  "editor.linkedEditing": true,
+
+  // Автоматическое закрытие тегов
+  "html.autoClosingTags": true,
+  "javascript.autoClosingTags": true,
+  "typescript.autoClosingTags": true,
+  // Быстрые подсказки
+  "html.completion.attributeDefaultValue": "doublequotes",
+  "vsintellicode.modify.editor.suggestSelection": "disabled",
+  "redhat.telemetry.enabled": true,
+  "cSpell.language": "en,ru",
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.startupEditor": "none"
+  // #endregion
+}

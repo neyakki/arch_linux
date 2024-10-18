@@ -1,0 +1,7 @@
+#!/bin/bash
+
+file=$(find "$HOME/.local/share/backgrounds" -type f | shuf -n 1)
+
+pkill swaybg &> /dev/null
+
+swaybg -i $file &>> /dev/null &

@@ -1,0 +1,236 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+      "key": "ctrl+alt+l",
+      "command": "editor.action.formatDocument",
+      "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+      "key": "ctrl+shift+i",
+      "command": "-editor.action.formatDocument",
+      "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+      "key": "ctrl+alt+o",
+      "command": "editor.action.organizeImports",
+      "when": "textInputFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+    },
+    {
+      "key": "shift+alt+o",
+      "command": "-editor.action.organizeImports",
+      "when": "textInputFocus && !editorReadonly && supportedCodeAction =~ /(\\s|^)source\\.organizeImports\\b/"
+    },
+    {
+      "key": "ctrl+f1",
+      "command": "code-runner.run"
+    },
+    {
+      "key": "ctrl+alt+n",
+      "command": "-code-runner.run"
+    },
+    {
+      "key": "f5",
+      "command": "-workbench.action.debug.continue",
+      "when": "debugState == 'stopped'"
+    },
+    {
+      "key": "f5",
+      "command": "-workbench.action.debug.start",
+      "when": "debuggersAvailable && debugState == 'inactive'"
+    },
+    {
+      "key": "f5",
+      "command": "-debug.openView",
+      "when": "!debuggersAvailable"
+    },
+    {
+      "key": "ctrl+alt+meta+n",
+      "command": "-welcome.showNewFileEntries"
+    },
+    {
+      "key": "ctrl+n",
+      "command": "-workbench.action.files.newUntitledFile"
+    },
+    {
+      "key": "ctrl+alt+n",
+      "command": "explorer.newFolder"
+    },
+    {
+      "key": "ctrl+n",
+      "command": "explorer.newFile"
+    },
+    {
+      "key": "alt+enter",
+      "command": "editor.action.quickFix",
+      "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    },
+    {
+      "key": "ctrl+.",
+      "command": "-editor.action.quickFix",
+      "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    },
+    {
+      "key": "ctrl+alt+o",
+      "command": "-workbench.action.remote.showMenu"
+    },
+    {
+      "key": "ctrl+up",
+      "command": "editor.action.insertCursorAbove",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+shift+up",
+      "command": "-editor.action.insertCursorAbove",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+down",
+      "command": "editor.action.insertCursorBelow",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+shift+down",
+      "command": "-editor.action.insertCursorBelow",
+      "when": "editorTextFocus"
+    },
+    {
+      "key": "ctrl+shift+up",
+      "command": "editor.action.goToTopHover",
+      "when": "editorHoverFocused"
+    },
+    {
+      "key": "ctrl+up",
+      "command": "-editor.action.goToTopHover",
+      "when": "editorHoverFocused"
+    },
+    {
+      "key": "ctrl+shift+down",
+      "command": "editor.action.goToBottomHover",
+      "when": "editorHoverFocused"
+    },
+    {
+      "key": "ctrl+down",
+      "command": "-editor.action.goToBottomHover",
+      "when": "editorHoverFocused"
+    },
+    {
+      "key": "ctrl+r",
+      "command": "-workbench.action.openRecent"
+    },
+    {
+      "key": "ctrl+r",
+      "command": "editor.action.startFindReplaceAction",
+      "when": "editorFocus || editorIsOpen"
+    },
+    {
+      "key": "ctrl+h",
+      "command": "-editor.action.startFindReplaceAction",
+      "when": "editorFocus || editorIsOpen"
+    },
+    {
+      "key": "ctrl+d",
+      "command": "editor.action.copyLinesDownAction",
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "key": "ctrl+shift+alt+down",
+      "command": "-editor.action.copyLinesDownAction",
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "key": "ctrl+c",
+      "command": "workbench.action.terminal.copySelection",
+      "when": "terminalTextSelectedInFocused || terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected || terminalFocus && terminalTextSelected && terminalTextSelectedInFocused || terminalHasBeenCreated && terminalTextSelected && terminalTextSelectedInFocused || terminalProcessSupported && terminalTextSelected && terminalTextSelectedInFocused"
+    },
+    {
+      "key": "ctrl+shift+c",
+      "command": "-workbench.action.terminal.copySelection",
+      "when": "terminalTextSelectedInFocused || terminalFocus && terminalHasBeenCreated && terminalTextSelected || terminalFocus && terminalProcessSupported && terminalTextSelected || terminalFocus && terminalTextSelected && terminalTextSelectedInFocused || terminalHasBeenCreated && terminalTextSelected && terminalTextSelectedInFocused || terminalProcessSupported && terminalTextSelected && terminalTextSelectedInFocused"
+    },
+    {
+      "key": "ctrl+v",
+      "command": "workbench.action.terminal.paste",
+      "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+      "key": "ctrl+shift+v",
+      "command": "-workbench.action.terminal.paste",
+      "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+      "key": "ctrl+[",
+      "command": "editor.fold",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "ctrl+shift+[",
+      "command": "-editor.fold",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "ctrl+shift+[",
+      "command": "editor.foldAll",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "ctrl+k ctrl+0",
+      "command": "-editor.foldAll",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "ctrl+]",
+      "command": "editor.unfold",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "ctrl+shift+]",
+      "command": "-editor.unfold",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "ctrl+shift+]",
+      "command": "editor.unfoldAll",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "ctrl+k ctrl+j",
+      "command": "-editor.unfoldAll",
+      "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+      "key": "ctrl+alt+l",
+      "command": "notebook.formatCell",
+      "when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+      "key": "ctrl+shift+i",
+      "command": "-notebook.formatCell",
+      "when": "editorHasDocumentFormattingProvider && editorTextFocus && inCompositeEditor && notebookEditable && !editorReadonly && activeEditor == 'workbench.editor.notebook'"
+    },
+    {
+      "key": "f5",
+      "command": "workbench.action.debug.start"
+    },
+    {
+      "key": "ctrl+shift+[Backquote]",
+      "command": "workbench.action.terminal.new"
+    },
+    {
+      "key": "ctrl+[Backquote]",
+      "command": "workbench.action.closePanel"
+    },
+    {
+      "key": "ctrl+[Backquote]",
+      "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+      "key": "ctrl+[Slash]",
+      "command": "editor.action.commentLine",
+      "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+      "key": "ctrl+[IntlBackslash]",
+      "command": "-editor.action.commentLine",
+      "when": "editorTextFocus && !editorReadonly"
+    }
+  ]

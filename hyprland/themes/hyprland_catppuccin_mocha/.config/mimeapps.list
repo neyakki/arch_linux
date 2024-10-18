@@ -1,0 +1,9 @@
+[Default Applications]
+x-scheme-handler/tonsite=org.telegram.desktop._0720e1a31925dc2f86a7fe39aa24a910.desktop
+image/jpeg=org.gnome.Loupe.desktop
+video/mp4=com.github.rafostar.Clapper.desktop
+audio/mpeg=cmus.desktop
+
+[Added Associations]
+x-scheme-handler/tonsite=org.telegram.desktop._0720e1a31925dc2f86a7fe39aa24a910.desktop;
+image/jpeg=org.gnome.Loupe

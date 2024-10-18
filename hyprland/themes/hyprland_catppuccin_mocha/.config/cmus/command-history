@@ -1,0 +1,11 @@
+q
+live-filter q
+cmus-remote -p
+p
+c
+live-filter c
+cmus-remote -c
+?
+/
+save -l
+add ~/Music

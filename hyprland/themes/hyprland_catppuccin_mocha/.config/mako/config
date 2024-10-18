@@ -1,0 +1,21 @@
+# Take a look at the mako manpage with the command:
+#   man 5 mako
+# To view all configuration options.
+
+font="JetBrainsMono Nerd Font" 12
+format=%a - %s\n%b
+sort=-time
+output=eDP-1
+
+default-timeout=15000
+border-radius=10
+
+width=550
+background-color=#1e1e2e
+text-color=#cdd6f4
+border-color=#cba6f7
+progress-color=#313244
+
+[urgency=high]
+border-color=#fab387
+
